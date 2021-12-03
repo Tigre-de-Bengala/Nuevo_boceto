@@ -300,31 +300,6 @@
         <!--LO QUE SIGUE ES OTRA BIBLIOTECA DE JAVASCRIPT-->
         <script src="https://unpkg.com/image-compare-viewer/dist/image-compare-viewer.min.js"></script>
         <!--LO QUE SIGUE ES LA CONFIGURACIÓN DE LA COMPARACIÓN DE IMÁGENES-->
-        <script>
-            const element = document.querySelector("#image-compare");
-            const options = {
-                  controlColor: "#FFFFFF",
-                  controlShadow: true,
-                  addCircle: true,
-                  addCircleBlur: true,
-                  showLabels: true,
-                  labelOptions: {
-                    before: 'Antes',
-                    after: 'Despues',
-                    onHover: false
-                }
-            };
-            const viewer = new ImageCompare(element, options).mount();
-        </script>
-        <!--PARA QUE HOMERO CORRA UNA VEZ LLEGUEMOS AL FINAL-->
-        <script>
-            var f = document.querySelector("#final").offsetTop;
-            addEventListener("scroll",function () {
-                if (f > window.scrollY) {
-                    document.querySelector("#final").querySelectorAll("img")[0].setAttribute("id", "veloz");
-                    document.querySelector("#final").querySelectorAll("img")[1].setAttribute("id", "lento");
-                }
-            },false);
-        </script>
+       
     </body>
 </html>
