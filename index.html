@@ -3,7 +3,26 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+        <!-- COMMON TAGS -->
+<meta charset="utf-8">
+<title>Tigre de Bengala</title>
+<!-- Search Engine -->
+<meta name="description" content="Es la especie de tigre más numerosa y supone cerca de la mitad de la población de tigres salvajes.">
+<meta name="image" content="https://github.com/Tigre-de-Bengala/Infografia/blob/main/files/tigre.png">
+<!-- Schema.org for Google -->
+<meta itemprop="name" content="Tigre de Bengala">
+<meta itemprop="description" content="Es la especie de tigre más numerosa y supone cerca de la mitad de la población de tigres salvajes.">
+<meta itemprop="image" content="https://github.com/Tigre-de-Bengala/Infografia/blob/main/files/tigre.png">
+<!-- Open Graph general (Facebook, Pinterest & Google+) -->
+<meta name="og:title" content="Tigre de Bengala">
+<meta name="og:description" content="Es la especie de tigre más numerosa y supone cerca de la mitad de la población de tigres salvajes.">
+<meta name="og:image" content="https://github.com/Tigre-de-Bengala/Infografia/blob/main/files/tigre.png">
+<meta name="og:url" content="https://tigre-de-bengala.github.io/Infografia/">
+<meta name="og:site_name" content="Tigre de bengala">
+<meta name="og:locale" content="Chile">
+<meta name="og:type" content="website">
+        
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
         <style>
             /* AHORA VAMOS A IMPORTAR, DE UN VIAJE, DOS FUENTES Y SUS RESPECTIVOS PESOS */
 
@@ -30,9 +49,11 @@
 
             h5,
             h6 {
-                font-weight: 700;
+                font-weight: 500;
                 font-family: "PT Serif", serif;
+                color: #ffffff;
             }
+
 
             /* AQUÍ HAGO UN AJUSTE IDIOMÁTICO:  EL GRINGO ENFATIZA CON ITÁLICA. EN CASTELLANO NO LO HACEMOS ASÍ, ENFATIZAMOS CON PESO DE FUENTE, MANTENIENDO UN ESTILO NORMAL */
 
@@ -56,7 +77,7 @@
             /* usaré el ">" entre el título se segundo nive (h2) y el lapso en la misma línea (span) --> https://techbrij.com/css-selector-adjacent-child-sibling */
 
             h2 > span {
-                background: var(--bs-primary);
+                background: #B55E1C;
                 color: #fff;
             }
 
@@ -70,7 +91,7 @@
                 0%{left: 0; position: absolute;}
                 100%{left: calc(100% - 60px); position: absolute;}
             }
-
+            
             #lento{
                 animation: corre 10s normal forwards;
             }
@@ -83,21 +104,21 @@
         <!--ESTO SERVIRÁ PARA COMPARAR UN ANTES Y UN DESPUÉS-->
         <link href="https://unpkg.com/image-compare-viewer/dist/image-compare-viewer.min.css" rel="stylesheet" />
 
-        <title>Tigre de Bengala</title>
+        <title>Tigre de bengala - Ana Carolina Soliz - Sebastian Leal</title>
     </head>
     <body>
         <!--ESTE ES EL ENCABEZADO-->
         <header class="container">
             <div class="row">
                 <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
-
+                    
                     <h2 class="text-center mt-5 fst-italic"><span class="px-2 py-1">Panthera tigris tigris</span></h2>
-
+                    
                     <h1 class="text-center py-3">Tigre de Bengala</h1>
-
-                    <p class="lead">Un ave cantora que pasa la mayor parte del tiempo a ras de piso. Es endémica de los bosques templados del centro-sur de Chile y Argentina. Tiene un color pardo rojizo en el lomo, color que cambia a un anaranjado rojizo en su pecho y alrededor de sus ojos. En su vientre tiene líneas blancas y negras transversales.</p>
-
-                    <p>El chucao, que también es conocido como <em>tricao</em>, <em>tapaculo chucao</em> o <em>tapacola chucao</em>, puede darte buena o mala suerte; si escuchas su canto por la derecha, tendrás buena suerte, pero si lo escuchas por la izquierda, tendrás mala suerte. A diferencia de la conservación de otras especies animales a las que se asocia con la suerte, la del chucao aún no está amenazada, siendo una especie que se considera bajo preocupación menor (abreviado oficialmente como <em>LC</em>, del inglés <i>Least Concern</i>)
+                    
+                    <p class="lead text-center" >Es la especie de tigre más numerosa y supone cerca de la mitad de la población de tigres salvajes.</p>
+                    
+                    <p class="lead text-center">Otros nombres utilizados: Tigre de Bengala Real, Tigre Indio
                     </p>
 
                     <div class="text-center py-3 px-3 px-sm-2 px-md-1 px-lg-0">
@@ -106,34 +127,39 @@
                         <!--Vean más abajo, las líneas 249 a 266-->
                     </div>
 
-                    <!--Muestra el chucao chico o el grando, pero carga ambos-->
-                    <object data="files/tigre.png"></object>
-                  
+                </div>
+                <div class="col-xl-11 col-xxl-10 mx-auto">
+                    
+                    <!--Muestra el tigre chico o el grando, pero carga ambos-->
+                    <object data="files/tigre-chico.svg" type="image/svg+xml" class="d-md-none"></object>
+                    <object data="files/tigre-grande.svg" type="image/svg+xml" class="d-none d-md-block"></object>
                     <!--Se muestra o no por una clase de Bootstrap que responde al ancho de pantalla-->
 
                     <!--Acá se cargan dos audios, pero sonará uno-->
                     <div class="mx-auto px-3 py-2 rounded-pill shadow-sm" style="width:220px; background:#ddd">
                         <audio id="elAudio">
-                            <source src="files/canto.mp3" type="audio/mpeg">
-                            <source src="files/canto.ogg" type="audio/ogg">
+                            <source src="files/sonido tigre.mp3" type="audio/mpeg">
+                            <source src="files/sonido tigre.ogg" type="audio/ogg">
                         </audio>
                         <div class="form-check form-switch text-center">
                             <input class="form-check-input" type="checkbox" id="elSwitch">
-                            <label class="form-check-label" for="elSwitch">Escucha al chucao</label>
+                            <label class="form-check-label" for="elSwitch">Escucha al Tigre</label>
                         </div>
                     </div>
-                    <!--Suena con JavaScript, ver líneas 267 a 278-->
+                    <!--Suena con JavaScript, ver líneas 267 a 278--> 
                 </div>
             </div>
         </header>
         <!--ESTE ES EL CONTENIDO PRINCIPAL-->
         <main>
-            <section class="container-fluid g-0">
+           <section class="container-fluid g-0">
                 <div class="row g-0">
                     <div class="col-12 py-3">
                         <h3 class="text-center pt-5 pb-2">Presencia</h3>
+                        
                         <!--VAMOS A INCLUIR TRES SVG EN UN CARRUSEL-->
-                        <div id="carruselConMapa" class="carousel carousel-dark slide carousel-fade" data-bs-ride="carousel">
+
+                       <!--  <div id="carruselConMapa" class="carousel carousel-dark slide carousel-fade" data-bs-ride="carousel">
                             <div class="carousel-indicators">
                                 <button type="button" data-bs-target="#carruselConMapa" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                                 <button type="button" data-bs-target="#carruselConMapa" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -162,7 +188,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> -->
             <section class="container">
                 <div class="row">
                     <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto mt-3 mb-5">
@@ -170,11 +196,62 @@
                     </div>
                 </div>
             </section>
+            <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
+                        <h4 class="text-center pt-5 pb-2">Distribución de las subespecies</h4>
+                        <object data="files/mapa-t1.svg" type="image/svg+xml" class="my-3"></object>
+                        <p class="text-center">Se reconocen seis subespecies de Panthera tigris, que aún existen en vida silvestre.</p>
+                    </div>
 
-            <section class="container">
+                <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
+                        <h4 class="text-center pt-5 pb-2">Ubicación</h4>
+                        <object data="files/mapa-t0.svg" type="image/svg+xml" class="my-3"></object>
+                        <p class="text-center">Nativos de India y Bangladesh, pero tiene su rango de distribución a lo largo de todo el subcontinente indio.</p>
+                    </div>
+                <div class="row g-0">
+                    <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
+                        <h4 class="text-center pt-5 pb-2">Hábitad</h4>
+                        <!--VAMOS A INCLUIR cuatro imagenes EN UN CARRUSEL tigre-->
+                        <div id="carruselHabitad" class="carousel carousel-dark slide carousel-fade" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carruselHabitad" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carruselHabitad" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carruselHabitad" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carruselHabitad" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active" data-bs-interval="5000">
+                                    <img src="files/B1.jpg" style="overflow:visible;" width="2000" height="600" transform="matrix(0.5 0 0 0.5 0 0)" class="d-block w-100 img-fluid">
+                                    <div class="carousel-caption">
+                                        <h5>Boques Tropical Seco</h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="5000">
+                                    <img src="files/B2.jpg" style="overflow:visible;" width="2000" height="600" transform="matrix(0.5 0 0 0.5 0 0)" class="d-block w-100 img-fluid">            
+                                    <div class="carousel-caption">
+                                        <h5>Bosque Caducifoli</h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="5000">
+                                   <img src="files/B3.jpg" style="overflow:visible;" width="2000" height="600" transform="matrix(0.5 0 0 0.5 0 0)" class="d-block w-100 img-fluid">
+                                    <div class="carousel-caption">
+                                        <h5>Bosque Tropical Humedo</h5>
+                                    </div>
+                                </div>
+                                <div class="carousel-item" data-bs-interval="5000">
+                                    <img src="files/B4.jpg" style="overflow:visible;" width="2000" height="600" transform="matrix(0.5 0 0 0.5 0 0)" class="d-block w-100 img-fluid">
+                                    <div class="carousel-caption">
+                                        <h5>Manglar</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+              <section class="container">
                 <div class="row">
                     <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
-                        <h3 class="text-center pt-5 pb-2">Visión</h3>
+                        <h3 class="text-center pt-5 pb-2">Características</h3>
                     </div>
                     <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
                         <div class="row align-items-center py-4">
@@ -215,47 +292,36 @@
                             </div>
                         </div>
                     </div>
+
                     <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
                         <h4 class="text-center pt-5 pb-2">Tamaños</h4>
-                        <object data="files/grafico-tamanos.svg" type="image/svg+xml" class="my-3"></object>
-                        <p>Si vives en la ciudad, esta referencia te podría ser útil: <em>El tamaño de un chucao adulto está entre los tamaños de un gorrión y un zorzal</em>. Loren ipsum Nunc pulvinar laoreet nulla eget tincidunt. Donec interdum suscipit turpis, in mollis sapien bibendum dapibus. Aenean auctor sapien sit amet nisl rhoncus fringilla. Aliquam et varius mi, ut sodales arcu. Pellentesque tincidunt aliquet vulputate. Vestibulum tristique venenatis laoreet. Vivamus felis sem, commodo vel placerat nec, feugiat in purus.</p>
+                        <object data="files/grafico-tamanos-t.svg" type="image/svg+xml" class="my-3"></object>
+                        <p>Son los miembros más grandes de la familia de los felinos.</p>
                     </div>
-                    
-                      <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
-                        <h4 class="text-center pt-5 pb-2">Disminución de población por cazadores</h4>
-                        <object data="files/graficotigre.png" class="my-3"></object>
-                        <p>Su principal amenaza es la fragmentación y pérdida de su hábitat natural, debido a múltiples presiones humanas como la construcción de caminos y la expansión de la urbe.</p>
-                    </div>
-                    
-                      <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
+                    <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
                         <h4 class="text-center pt-5 pb-2">Yuxtaposición de imágenes</h4>
                         <div id="image-compare" class="my-3">
-                            <img src="files/tigrecraneo.png" alt="Craneo" />
-                            <img src="files/tigrecabeza.png" alt="Cabeza" />
+                            <img src="files/beirut-antes.jpg" alt="Antes" />
+                            <img src="files/beirut-despues.jpg" alt="Después" />
                         </div>
                         <p>Hay distintas formas de resolver, con JavaScript, una <a href="https://bashooka.com/coding/image-comparison-slider-javascript-libraries/" target="_blank">yuxtaposición imágenes</a>. En este caso ocupamos <a href="https://image-compare-viewer.netlify.app/" target="_blank">Imagen Comparte Viewer</a>, que ofrece su código de programación como una biblioteca de JavaScript complementada con un código de descripción de estilo (CSS). </p>
-                    </div>
-                    
-                 <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
-            <h4 class="text-center pt-5 pb-2">Salto del tigre</h4>
-                            <div class="container">
-              <div class="row">
-                 <img src="files/gif-salto.gif" /> 
-                     </div>
-                                </div>
-                     </div>
-                    
+                    </div>                    
                         <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
                             <h4 class="text-center pt-5 pb-2">Animación</h4>
                             <p>Recuerden que podemos animar SVG con CSS, como en el siguiente caso; donde tenemos un par de <a href="https://www.w3schools.com/css/css3_animations.asp" target="_blank">animaciones</a>, cada una con su <a href="https://www.w3schools.com/css/css3_2dtransforms.asp" target="_blank">transformación en 2D</a>:
                             </p>
-                            <object class="mx-5" data="files/el-grito.svg" type="image/svg+xml"></object>
-                            <p class="text-center mx-5 mb-5 small text-muted">Este es el saco gural o faringeo del Siamang, que puede inflarse hasta alcanzar el tamaño de su cabeza. Está presente en macho y hembra. Se trata de una característica morfológica única que los distingue de otros gibones.</p>
+                            <object class="mx-5" data="files/garra.svg" type="image/svg+xml"></object>
+                            <p class="text-center mx-5 mb-5 small text-muted">¿Cómo funcionas sus garras? En ataque el tendón pulsa el dedo de la pata hacia adelante y en reposo los ligamentos mantienen el hueso de la pata hacia atrás.</p>
                             <p class="mb-5">Como ya se dijo, hay formas <a href="https://css-tricks.com/guide-svg-animations-smil/" target="_blank" rel="noopener noreferrer">más complejas de animar SVG</a>, donde no se utiliza CSS, sino el mismo primer lenguaje. De tal forma se resuelven las animaciones de <strong>Movements and maneuvers </strong> en <a href="https://multimedia.scmp.com/culture/article/ufo/" target="_blank" rel="noopener noreferrer">Are we alone?</a>, un trabajo de Adolfo Arranz y Pablo Robles, publicado en el South China Morning Post.</p>
                             <p>También hay formas de animar con CSS y HTML, sin SVG, pero eso lo podremos ver la próxima sesión, sobre <a href="https://github.com/profesorfaco/infografia/tree/main/clase-4" target="_blank">JavaScript: Datos y bibliotecas</a>:</p>
                             <div class="row mb-5" id="final">
-                              
-                            </div>
+                                <div class="col-12" style="position:relative; height:60px;">
+                                    <img src="files/corre-atrasado.gif" width="60" height="60">
+                                </div>
+                                <div class="col-12" style="position:relative; height:60px;">
+                                    <img src="files/corre-atrasado.gif" width="60" height="60">
+                                </div>
+                            </div>                                
                     </div>
                 </div>
             </section>
@@ -270,7 +336,7 @@
                 </div>
             </div>
         </footer>
-        <!--EN EL SCRIPT QUE SIGUE AJUSTA EL SVG DEL ESTADO DE CONSERVACIÓN AL ANCHO DE LA VENTANA-->
+        <!--EN EL SCRIPT QUE SIGUE AJUSTA EL SVG DEL ESTADO DE CONSERVACIÓN AL ANCHO DE LA VENTANA-->        
         <script>
             window.addEventListener("DOMContentLoaded", elAjuste);
             window.addEventListener("resize", elAjuste);
@@ -288,9 +354,9 @@
                 }
             }
         </script>
-        <!--CON EL SIGUIENTE SCRIPT HAGO CANTAR AL CHUCAO-->
+        <!--CON EL SIGUIENTE SCRIPT HAGO CANTAR AL TIGRE-->
         <script>
-            var canto = document.getElementById("elAudio");
+            var canto = document.getElementById("elAudio"); 
             var boton = document.getElementById("elSwitch");
             boton.addEventListener('change', function() {
                 if (this.checked) {
@@ -312,11 +378,36 @@
                 }
             }
         </script>
-        <!--BOOTSTRAP, ADEMÁS DE UN CSS, OFRECE SU PROPIA BIBLIOTECA DE JAVASCRIPT-->
+        <!--BOOTSTRAP, ADEMÁS DE UN CSS, OFRECE SU PROPIA BIBLIOTECA DE JAVASCRIPT-->        
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
         <!--LO QUE SIGUE ES OTRA BIBLIOTECA DE JAVASCRIPT-->
         <script src="https://unpkg.com/image-compare-viewer/dist/image-compare-viewer.min.js"></script>
         <!--LO QUE SIGUE ES LA CONFIGURACIÓN DE LA COMPARACIÓN DE IMÁGENES-->
-       
+        <script>
+            const element = document.querySelector("#image-compare");
+            const options = {
+                  controlColor: "#FFF000",
+                  controlShadow: true,
+                  addCircle: true,
+                  addCircleBlur: true,
+                  showLabels: true,
+                  labelOptions: {
+                    before: 'Antes',
+                    after: 'Despues',
+                    onHover: false
+                }
+            };
+            const viewer = new ImageCompare(element, options).mount();
+        </script>
+        <!--PARA QUE HOMERO CORRA UNA VEZ LLEGUEMOS AL FINAL-->
+        <script>
+            var f = document.querySelector("#final").offsetTop;
+            addEventListener("scroll",function () {
+                if (f > window.scrollY) {
+                    document.querySelector("#final").querySelectorAll("img")[0].setAttribute("id", "veloz");
+                    document.querySelector("#final").querySelectorAll("img")[1].setAttribute("id", "lento");
+                }
+            },false);
+        </script>
     </body>
 </html>
