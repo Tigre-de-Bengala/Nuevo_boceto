@@ -307,6 +307,15 @@
                         <p>Hay distintas formas de resolver, con JavaScript, una <a href="https://bashooka.com/coding/image-comparison-slider-javascript-libraries/" target="_blank">yuxtaposición imágenes</a>. En este caso ocupamos <a href="https://image-compare-viewer.netlify.app/" target="_blank">Imagen Comparte Viewer</a>, que ofrece su código de programación como una biblioteca de JavaScript complementada con un código de descripción de estilo (CSS). </p>
                     </div>                    
                         <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
+                             <h4 class="text-center pt-5 pb-2">salto del tigre</h4>
+                             
+                <div  class = " contenedor " >
+              <div  class = " fila " >
+                 <img  src = " archivo /gif-salto.gif " />
+                 <img  src = " archivos /gif-salto.gif " />
+                     </div >
+                                </div >
+                     </div >
                             <h4 class="text-center pt-5 pb-2">Animación</h4>
                             <p>Recuerden que podemos animar SVG con CSS, como en el siguiente caso; donde tenemos un par de <a href="https://www.w3schools.com/css/css3_animations.asp" target="_blank">animaciones</a>, cada una con su <a href="https://www.w3schools.com/css/css3_2dtransforms.asp" target="_blank">transformación en 2D</a>:
                             </p>
@@ -321,7 +330,8 @@
                                 <div class="col-12" style="position:relative; height:60px;">
                                     <img src="files/corre-atrasado.gif" width="60" height="60">
                                 </div>
-                            </div>                                
+                            </div>
+
                     </div>
                 </div>
             </section>
@@ -386,7 +396,7 @@
         <script>
             const element = document.querySelector("#image-compare");
             const options = {
-                  controlColor: "#FFF000",
+                  controlColor: "#FFFFFF",
                   controlShadow: true,
                   addCircle: true,
                   addCircleBlur: true,
@@ -400,7 +410,7 @@
             const viewer = new ImageCompare(element, options).mount();
         </script>
         <!--PARA QUE HOMERO CORRA UNA VEZ LLEGUEMOS AL FINAL-->
-        <script>
+         <script>
             var f = document.querySelector("#final").offsetTop;
             addEventListener("scroll",function () {
                 if (f > window.scrollY) {
