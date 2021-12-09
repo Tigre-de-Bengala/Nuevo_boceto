@@ -77,7 +77,7 @@
             /* usaré el ">" entre el título se segundo nive (h2) y el lapso en la misma línea (span) --> https://techbrij.com/css-selector-adjacent-child-sibling */
 
             h2 > span {
-                background: #B55E1C;
+                background: #dd7324;
                 color: #fff;
             }
 
@@ -99,6 +99,15 @@
             #veloz{
                 animation: corre 5s normal forwards;
             }
+             header{
+                background:linear-gradient(rgba(255, 255, 255, 0.40) 0%, rgba(255, 255, 255, 1) 100%), url(files/bosqu-01-01.jpg) ;
+                background-size: cover;
+                background-position: center top;
+                background-repeat: no-repeat;
+
+                width: 100%;
+            }
+       
         </style>
 
         <!--ESTO SERVIRÁ PARA COMPARAR UN ANTES Y UN DESPUÉS-->
@@ -108,15 +117,23 @@
     </head>
     <body>
         <!--ESTE ES EL ENCABEZADO-->
-        <header class="container">
+        <header >
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12 col-md-11 col-lg-10 col-xl-9 mx-auto" style="opacity: 40%;">
+                        <img src="files/bosque-01-01.jpg" class="w-100" />
+                    </div>
+                </div>
+            </div> 
+            <div class="container bg-white">
             <div class="row">
-                <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
+                <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto" style="position:relative; bottom: 150px;">
                     
-                    <h2 class="text-center mt-5 fst-italic"><span class="px-2 py-1">Panthera tigris tigris</span></h2>
+                    <h2 class="text-center mt-5 fst-italic" ><span class="px-2 py-1">Panthera tigris tigris</span></h2>
                     
                     <h1 class="text-center py-3">Tigre de Bengala</h1>
                     
-                    <p class="lead text-center" >Es la especie de tigre más numerosa y supone cerca de la mitad de la población de tigres salvajes.</p>
+                    <p class="lead text-center" >Es la subespecie de tigre más numerosa y se encuentra en distintos tipos de habitas incluyendo sabanas, bosques tropicales y subtropicales. Viven en solitario y marcan agresivamente con su olor grandes territorios para mantener alejados a los rivales. Son poderosos cazadores nocturnos, capaces de recorrer muchos kilómetros para encontrar búfalos, ciervos, jabalíes u otros grandes mamíferos. Los tigres usan su característico pelaje para camuflarse (no hay dos tigres con las mismas rayas). Acechan pacientemente y se acercan a sus víctimas con gran sigilo lo suficiente para atacarlas con un salto rápido y letal.</p>
                     
                     <p class="lead text-center">Otros nombres utilizados: Tigre de Bengala Real, Tigre Indio
                     </p>
@@ -136,7 +153,7 @@
                     <!--Se muestra o no por una clase de Bootstrap que responde al ancho de pantalla-->
 
                     <!--Acá se cargan dos audios, pero sonará uno-->
-                    <div class="mx-auto px-3 py-2 rounded-pill shadow-sm" style="width:220px; background:#ddd">
+                    <div class="mx-auto px-3 py-2 rounded-pill shadow-sm" style="width:220px; background:#dd7324; color: #ffffff">
                         <audio id="elAudio">
                             <source src="files/sonido tigre.mp3" type="audio/mpeg">
                             <source src="files/sonido tigre.ogg" type="audio/ogg">
@@ -156,57 +173,24 @@
                 <div class="row g-0">
                     <div class="col-12 py-3">
                         <h3 class="text-center pt-5 pb-2">Presencia</h3>
-                        
-                        <!--VAMOS A INCLUIR TRES SVG EN UN CARRUSEL-->
-
-                       <!--  <div id="carruselConMapa" class="carousel carousel-dark slide carousel-fade" data-bs-ride="carousel">
-                            <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#carruselConMapa" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#carruselConMapa" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#carruselConMapa" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                            </div>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active" data-bs-interval="1000">
-                                    <object class="d-block w-100" data="files/mapa-1.svg" type="image/svg+xml"></object>
-                                    <div class="carousel-caption">
-                                        <h5>1950</h5>
-                                    </div>
-                                </div>
-                                <div class="carousel-item" data-bs-interval="1000">
-                                    <object class="d-block w-100" data="files/mapa-2.svg" type="image/svg+xml"></object>
-                                    <div class="carousel-caption">
-                                        <h5>1970</h5>
-                                    </div>
-                                </div>
-                                <div class="carousel-item" data-bs-interval="1000">
-                                    <object class="d-block w-100" data="files/mapa-3.svg" type="image/svg+xml"></object>
-                                    <div class="carousel-caption">
-                                        <h5>2000</h5>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section> -->
-            <section class="container">
+           <section class="container">
                 <div class="row">
                     <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto mt-3 mb-5">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse ac lorem a lorem vulputate porttitor. In faucibus in justo id posuere. Cras iaculis odio auctor tempus facilisis. Quisque iaculis, est at rhoncus ullamcorper, turpis magna lobortis est, id egestas odio neque in orci. Phasellus fringilla ut ex vitae viverra. Pellentesque ullamcorper eget quam in tristique. Etiam vel pharetra est, ac hendrerit est. Nullam et elit felis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean tortor risus, ornare at bibendum nec, lobortis vel orci. Phasellus congue nunc at iaculis imperdiet. In luctus finibus congue.</p>
                     </div>
                 </div>
-            </section>
-            <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
+           </section>
+                <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
                         <h4 class="text-center pt-5 pb-2">Distribución de las subespecies</h4>
                         <object data="files/mapa-t1.svg" type="image/svg+xml" class="my-3"></object>
                         <p class="text-center">Se reconocen seis subespecies de Panthera tigris, que aún existen en vida silvestre.</p>
-                    </div>
+                </div>
 
                 <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
                         <h4 class="text-center pt-5 pb-2">Ubicación</h4>
                         <object data="files/mapa-t0.svg" type="image/svg+xml" class="my-3"></object>
                         <p class="text-center">Nativos de India y Bangladesh, pero tiene su rango de distribución a lo largo de todo el subcontinente indio.</p>
-                    </div>
+                </div>
                 <div class="row g-0">
                     <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
                         <h4 class="text-center pt-5 pb-2">Hábitad</h4>
@@ -292,7 +276,6 @@
                             </div>
                         </div>
                     </div>
-
                     <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
                         <h4 class="text-center pt-5 pb-2">Tamaños</h4>
                         <object data="files/grafico-tamanos-t.svg" type="image/svg+xml" class="my-3"></object>
@@ -309,12 +292,10 @@
                         <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
                              <h4 class="text-center pt-5 pb-2">Salto del tigre</h4>
                              
-                <div  class = "contenedor" >
-              <div  class="mx-5">
-                 <img  src = "files/gif-salto.gif" />
-                     </div >
-                                </div >
-                     </div >
+                        <div  class = "contenedor" >
+                        <div  class="mx-5">
+                            <img  src = "files/gif-salto.gif" />
+                        </div >
                             <h4 class="text-center pt-5 pb-2">Animación</h4>
                             <p>Recuerden que podemos animar SVG con CSS, como en el siguiente caso; donde tenemos un par de <a href="https://www.w3schools.com/css/css3_animations.asp" target="_blank">animaciones</a>, cada una con su <a href="https://www.w3schools.com/css/css3_2dtransforms.asp" target="_blank">transformación en 2D</a>:
                             </p>
@@ -322,18 +303,17 @@
                             <p class="text-center mx-5 mb-5 small text-muted">¿Cómo funcionas sus garras? En ataque el tendón pulsa el dedo de la pata hacia adelante y en reposo los ligamentos mantienen el hueso de la pata hacia atrás.</p>
                             <p class="mb-5">Como ya se dijo, hay formas <a href="https://css-tricks.com/guide-svg-animations-smil/" target="_blank" rel="noopener noreferrer">más complejas de animar SVG</a>, donde no se utiliza CSS, sino el mismo primer lenguaje. De tal forma se resuelven las animaciones de <strong>Movements and maneuvers </strong> en <a href="https://multimedia.scmp.com/culture/article/ufo/" target="_blank" rel="noopener noreferrer">Are we alone?</a>, un trabajo de Adolfo Arranz y Pablo Robles, publicado en el South China Morning Post.</p>
                             <p>También hay formas de animar con CSS y HTML, sin SVG, pero eso lo podremos ver la próxima sesión, sobre <a href="https://github.com/profesorfaco/infografia/tree/main/clase-4" target="_blank">JavaScript: Datos y bibliotecas</a>:</p>
-                            <div class="row mb-5" id="final">
-                                <div class="col-12" style="position:relative; height:60px;">
-                                    <img src="files/gif-salto.gif" width="60" height="60">
-                                </div>
-                                <div class="col-12" style="position:relative; height:60px;">
-                                    <img src="files/gif-salto.gif" width="60" height="60">
-                                </div>
+                        <div class="row mb-5" id="final">
+                            <div class="col-12" style="position:relative; height:60px;">
+                                <img src="files/gif-salto.gif" width="60" height="60">
                             </div>
-
-                    </div>
-                </div>
-            </section>
+                            <div class="col-12" style="position:relative; height:60px;">
+                                <img src="files/gif-salto.gif" width="60" height="60">
+                            </div>
+                        </div>
+                        </div>
+                        </div>
+       </section>
         </main>
         <!--ESTE ES EL PIE DE PÁGINA-->
         <footer class="bg-dark text-white-50">
