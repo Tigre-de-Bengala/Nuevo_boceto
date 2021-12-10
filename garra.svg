@@ -12,10 +12,10 @@
 			
 		
 		0% {
-               transform: rotate(0.060turn); center;
+               transform: rotate(0.060turn); 0px, 0px;
             }
         
-        100% {   transform: rotate(5deg);(0px, 0px);}   
+        100% {   transform: rotate(5deg);center:5;}   
         	}
 
         div {
