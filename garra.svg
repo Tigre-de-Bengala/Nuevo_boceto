@@ -25,7 +25,7 @@
 		}
 
             #una {
-            transform-origin : center;
+            transform-origin : 0px, 0px;
             animation: mueve 2s infinite alternate;
         }
 
