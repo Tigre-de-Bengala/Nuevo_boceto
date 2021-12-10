@@ -325,11 +325,11 @@
                     </div>                    
                         <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
                              <h4 class="text-center pt-5 pb-2">Salto del tigre</h4>
-                             
-                        <div  class = "contenedor" >
-                        <div  class="mx-5">
-                            <img  src = "files/gif-salto.gif" />
-                        </div >
+                             <p>Recuerden que podemos animar SVG con CSS, como en el siguiente caso; donde tenemos un par de <a href="https://www.w3schools.com/css/css3_animations.asp" target="_blank">animaciones</a>, cada una con su <a href="https://www.w3schools.com/css/css3_2dtransforms.asp" target="_blank">transformación en 2D</a>:
+                            </p>
+                        <div class="text-center py-3 px-3 px-sm-2 px-md-1 px-lg-0">
+                            <img  class="mx-5"  src = "files/gif-salto.gif" id="salto" />
+                        </div>
                             <h4 class="text-center pt-5 pb-2">Animación</h4>
                             <p>Recuerden que podemos animar SVG con CSS, como en el siguiente caso; donde tenemos un par de <a href="https://www.w3schools.com/css/css3_animations.asp" target="_blank">animaciones</a>, cada una con su <a href="https://www.w3schools.com/css/css3_2dtransforms.asp" target="_blank">transformación en 2D</a>:
                             </p>
@@ -434,6 +434,23 @@
             window.addEventListener("DOMContentLoaded", elAjuste);
             window.addEventListener("resize", elAjuste);
             var ajustable = document.getElementById("conservacion");
+            function elAjuste() {
+                if (window.innerWidth >= 1000) {
+                    ajustable.className = "";
+                    ajustable.classList.add("w-50");
+                } else if (window.innerWidth < 1000 && window.innerWidth > 700) {
+                    ajustable.className = "";
+                    ajustable.classList.add("w-75");
+                } else {
+                    ajustable.className = "";
+                    ajustable.classList.add("w-100");
+                }
+            }
+        </script>
+        <script>
+            window.addEventListener("DOMContentLoaded", elAjuste);
+            window.addEventListener("resize", elAjuste);
+            var ajustable = document.getElementById("salto");
             function elAjuste() {
                 if (window.innerWidth >= 1000) {
                     ajustable.className = "";
