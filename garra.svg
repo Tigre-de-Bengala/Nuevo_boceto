@@ -25,7 +25,7 @@
 		}
 
             #una {
-            transform-origin : left;
+            transform-origin : right;
             animation: mueve 2s infinite alternate;
         }
 
