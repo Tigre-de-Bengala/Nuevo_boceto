@@ -447,23 +447,7 @@
                 }
             }
         </script>
-        <script>
-            window.addEventListener("DOMContentLoaded", elAjuste);
-            window.addEventListener("resize", elAjuste);
-            var ajustable = document.getElementById("salto");
-            function elAjuste() {
-                if (window.innerWidth >= 1000) {
-                    ajustable.className = "";
-                    ajustable.classList.add("w-50");
-                } else if (window.innerWidth < 1000 && window.innerWidth > 700) {
-                    ajustable.className = "";
-                    ajustable.classList.add("w-75");
-                } else {
-                    ajustable.className = "";
-                    ajustable.classList.add("w-100");
-                }
-            }
-        </script>
+
         <!--CON EL SIGUIENTE SCRIPT HAGO CANTAR AL TIGRE-->
         <script>
             var canto = document.getElementById("elAudio"); 
