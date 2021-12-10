@@ -25,7 +25,7 @@
 		}
 
             #una {
-            transform x="50" y="50": center;
+            transform x="100" y="50": center;
             animation: mueve 2s infinite alternate;
         }
 
