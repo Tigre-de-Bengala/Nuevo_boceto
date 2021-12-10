@@ -12,7 +12,7 @@
 			
 		
 		0% {
-                transform: rotate(0.060turn);
+                transform: rotate(-0.060turn);
             }
         
         100% {transform: rotate(5deg);left:5px;}   
