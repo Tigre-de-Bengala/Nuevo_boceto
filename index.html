@@ -345,7 +345,35 @@
                         <h4 class="text-center pt-5 pb-2">Alimentación</h4>
                         <object data="files/alimentacion.svg" type="image/svg+xml" ></object>
                         <p>Son carnívoros y su dieta incluye diversos mamíferos, aves, peces, roedores y anfibios.</p>
-                    </div>                 
+                    </div> 
+                    <!--mutacion-->     
+                      <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
+                        <div class="row align-items-center py-4">
+                            <div class="col-sm-6 text-center text-sm-start order-sm-2">
+                                <h4>Variación genética</h4>
+                                <p>Existe una mutación genética que produce que la piel naranja del tigre se sustituya por otro color.</p>
+                                <div class="small fw-bold">
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="radioNocturno" value="blanco" onchange="getValue(this)" checked />
+                                        <label class="form-check-label" for="radioNocturno">Tigre blanco</label>
+                                    </div>
+                                    <div class="form-check form-check-inline">
+                                        <input class="form-check-input" type="radio" name="exampleRadios" id="radioDiurno" value="dorado" onchange="getValue(this)" />
+                                        <label class="form-check-label" for="radioDiurno">Tigre Dorado</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-12  col-md-6 mt-1">
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                     viewBox="0 0 400 400" style="enable-background:new 0 0 400 400;" xml:space="preserve">
+                                <image style="overflow:visible;" width="400" height="400" id="tigreblanco" xlink:href="tigre-blanco.jpg" class="d-none" >
+                                </image>
+                                <image  style="overflow:visible;" width="400" height="400" id="tigredorado" xlink:href="tigre-dorado.jpg" class="d-none" >
+                                </image>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
                         <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
                              <h4 class="text-center pt-5 pb-2">Salto del tigre</h4>
                              <p>Recuerden que podemos animar SVG con CSS, como en el siguiente caso; donde tenemos un par de <a href="https://www.w3schools.com/css/css3_animations.asp" target="_blank">animaciones</a>, cada una con su <a href="https://www.w3schools.com/css/css3_2dtransforms.asp" target="_blank">transformación en 2D</a>:
@@ -491,6 +519,18 @@
                 } else {
                     document.getElementById("poca_luz").classList.add("d-none");
                     document.getElementById("mucha_luz").classList.remove("d-none");
+                }
+            }
+        </script>
+        <!--CON EL SIGUIENTE SCRIPT CAMBIO la mutacion-->
+        <script>
+            function getValue(radio) {
+                if (radio.value == "blanco") {
+                    document.getElementById("tigreblanco").classList.remove("d-none");
+                    document.getElementById("tigredorado").classList.add("d-none");
+                } else {
+                    document.getElementById("tigreblanco").classList.add("d-none");
+                    document.getElementById("tigredorado").classList.remove("d-none");
                 }
             }
         </script>
