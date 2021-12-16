@@ -1,243 +1,244 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!-- COMMON TAGS -->
-    <meta charset="utf-8" />
-    <title>Tigre de Bengala</title>
-    <!-- Search Engine -->
-    <meta name="description" content="Es la especie de tigre más numerosa y supone cerca de la mitad de la población de tigres salvajes" />
-    <meta name="image" content="https://github.com/Tigre-de-Bengala/Infografia/blob/main/files/tigre.png" />
-    <!-- Schema.org for Google -->
-    <meta itemprop="name" content="Tigre de Bengala" />
-    <meta itemprop="description" content="Es la especie de tigre más numerosa y supone cerca de la mitad de la población de tigres salvajes." />
-    <meta itemprop="image" content="https://github.com/Tigre-de-Bengala/Infografia/blob/main/files/tigre.png" />
-    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
-    <meta name="og:title" content="Tigre de Bengala" />
-    <meta name="og:description" content="Es la especie de tigre más numerosa y supone cerca de la mitad de la población de tigres salvajes." />
-    <meta name="og:image" content="https://github.com/Tigre-de-Bengala/Infografia/blob/main/files/tigre.png" />
-    <meta name="og:url" content="https://tigre-de-bengala.github.io/Infografia/" />
-    <meta name="og:site_name" content="Tigre de bengala" />
-    <meta name="og:locale" content="Chile" />
-    <meta name="og:type" content="website" />
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <!-- COMMON TAGS -->
+        <meta charset="utf-8" />
+        <title>Tigre de Bengala</title>
+        <!-- Search Engine -->
+        <meta name="description" content="Es la especie de tigre más numerosa y supone cerca de la mitad de la población de tigres salvajes" />
+        <meta name="image" content="https://github.com/Tigre-de-Bengala/Infografia/blob/main/files/tigre.png" />
+        <!-- Schema.org for Google -->
+        <meta itemprop="name" content="Tigre de Bengala" />
+        <meta itemprop="description" content="Es la especie de tigre más numerosa y supone cerca de la mitad de la población de tigres salvajes." />
+        <meta itemprop="image" content="https://github.com/Tigre-de-Bengala/Infografia/blob/main/files/tigre.png" />
+        <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+        <meta name="og:title" content="Tigre de Bengala" />
+        <meta name="og:description" content="Es la especie de tigre más numerosa y supone cerca de la mitad de la población de tigres salvajes." />
+        <meta name="og:image" content="https://github.com/Tigre-de-Bengala/Infografia/blob/main/files/tigre.png" />
+        <meta name="og:url" content="https://tigre-de-bengala.github.io/Infografia/" />
+        <meta name="og:site_name" content="Tigre de bengala" />
+        <meta name="og:locale" content="Chile" />
+        <meta name="og:type" content="website" />
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
-    <style>
-        /* AHORA VAMOS A IMPORTAR, DE UN VIAJE, DOS FUENTES Y SUS RESPECTIVOS PESOS */
-        @import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,300;0,400;0,500;1,400&display=swap");
-        /* vamos a contradecir a Bootstrap, partiendo por la fuente tipográfica y afectando sus variables --> https://getbootstrap.com/docs/5.1/customize/css-variables/  */
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+        <style>
+            /* AHORA VAMOS A IMPORTAR, DE UN VIAJE, DOS FUENTES Y SUS RESPECTIVOS PESOS */
+            @import url("https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,300;0,400;0,500;1,400&display=swap");
+            /* vamos a contradecir a Bootstrap, partiendo por la fuente tipográfica y afectando sus variables --> https://getbootstrap.com/docs/5.1/customize/css-variables/  */
 
-        :root {
-            --bs-body-font-family: "Roboto", sans-serif;
-            --bs-primary: #f70;
-        }
-        a {
-            color: #222; /*colores simplificados #222222 otra forma de escribir los colores rgb(255,255,255) o rgba (255,255,255,0.5) donde a es alpha, simil a la opacidad que va desde 0 a 1*/
-            text-decoration: underline;
-            transition: color ease 0.5s;
-        }
-        a:hover {
-            color: var(--bs-primary);
-            text-decoration: none;
-            transition: color ease 0.5s;
-        }
-
-        /* vamos a ajustar los pesos de algunos títulos a lo que dispone la fuente  */
-
-        h1,
-        h2,
-        h3,
-        h4 {
-            font-weight: 400;
-            font-family: "PT Serif", serif;
-        }
-
-        /* vamos a ajustar los pesos de otros títulos y negrita a lo que dispone la fuente  */
-
-        h5,
-        h6 {
-            font-weight: 500;
-            font-family: "PT Serif", serif;
-            color: #ffffff;
-        }
-
-        /* AQUÍ HAGO UN AJUSTE IDIOMÁTICO:  EL GRINGO ENFATIZA CON ITÁLICA. EN CASTELLANO NO LO HACEMOS ASÍ, ENFATIZAMOS CON PESO DE FUENTE, MANTENIENDO UN ESTILO NORMAL */
-
-        strong,
-        b,
-        em {
-            font-weight: 500;
-            font-style: normal;
-        }
-
-        /* definiré un tamaño del título de primer nivel (h1) que se ajuste según el viewport width --> https://www.yunbitsoftware.com/blog/2017/06/22/viewport-units-css-que-es/ */
-
-        h1 {
-            font-size: calc(3rem + 3vw);
-        }
-
-        /* repetiré el truco anterior con el título de segundo nivel (h2), que, a diferencia del anterior, puedo ocupar varias veces en la misma página */
-
-        h2 {
-            font-size: calc(0.75rem + 1vw);
-        }
-
-        /* usaré el ">" entre el título se segundo nive (h2) y el lapso en la misma línea (span) --> https://techbrij.com/css-selector-adjacent-child-sibling */
-
-        h2 > span {
-            background: #dd7324;
-            color: #fff;
-        }
-
-        /* sigamos con el título de tercer nivel (h3) */
-
-        h3 {
-            font-size: calc(1.5rem + 1vw);
-        }
-
-        @keyframes corre {
-            0% {
-                left: 0;
-                position: absolute;
+            :root {
+                --bs-body-font-family: "Roboto", sans-serif;
+                --bs-primary: #f70;
             }
-            100% {
-                left: calc(100% - 60px);
-                position: absolute;
+            a {
+                color: #222; /*colores simplificados #222222 otra forma de escribir los colores rgb(255,255,255) o rgba (255,255,255,0.5) donde a es alpha, simil a la opacidad que va desde 0 a 1*/
+                text-decoration: underline;
+                transition: color ease 0.5s;
             }
-        }
+            a:hover {
+                color: var(--bs-primary);
+                text-decoration: none;
+                transition: color ease 0.5s;
+            }
 
-        #lento {
-            animation: corre 10s normal forwards;
-        }
+            /* vamos a ajustar los pesos de algunos títulos a lo que dispone la fuente  */
 
-        #veloz {
-            animation: corre 5s normal forwards;
-        }
-        
-        
-         aside{
-            background: linear-gradient(#fff, #e7e8e9);
-         }
-        
-        span[data-bs-toggle="popover"] {
-            cursor: pointer;
-        }
-    </style>
+            h1,
+            h2,
+            h3,
+            h4 {
+                font-weight: 400;
+                font-family: "PT Serif", serif;
+            }
 
-    <!--ESTO SERVIRÁ PARA COMPARAR UN ANTES Y UN DESPUÉS-->
-    <link href="https://unpkg.com/image-compare-viewer/dist/image-compare-viewer.min.css" rel="stylesheet" />
+            /* vamos a ajustar los pesos de otros títulos y negrita a lo que dispone la fuente  */
 
-    <title>Tigre de bengala - Ana Carolina Soliz - Sebastian Leal</title>
-</head>
+            h5,
+            h6 {
+                font-weight: 500;
+                font-family: "PT Serif", serif;
+                color: #ffffff;
+            }
+
+            /* AQUÍ HAGO UN AJUSTE IDIOMÁTICO:  EL GRINGO ENFATIZA CON ITÁLICA. EN CASTELLANO NO LO HACEMOS ASÍ, ENFATIZAMOS CON PESO DE FUENTE, MANTENIENDO UN ESTILO NORMAL */
+
+            strong,
+            b,
+            em {
+                font-weight: 500;
+                font-style: normal;
+            }
+
+            /* definiré un tamaño del título de primer nivel (h1) que se ajuste según el viewport width --> https://www.yunbitsoftware.com/blog/2017/06/22/viewport-units-css-que-es/ */
+
+            h1 {
+                font-size: calc(2rem + 3vw);
+            }
+
+            /* repetiré el truco anterior con el título de segundo nivel (h2), que, a diferencia del anterior, puedo ocupar varias veces en la misma página */
+
+            h2 {
+                font-size: calc(0.75rem + 1vw);
+            }
+
+            /* usaré el ">" entre el título se segundo nive (h2) y el lapso en la misma línea (span) --> https://techbrij.com/css-selector-adjacent-child-sibling */
+
+            h2 > span {
+                background: #dd7324;
+                color: #fff;
+            }
+
+            /* sigamos con el título de tercer nivel (h3) */
+
+            h3 {
+                font-size: calc(1.5rem + 1vw);
+            }
+
+            @keyframes corre {
+                0% {
+                    left: 0;
+                    position: absolute;
+                }
+                100% {
+                    left: calc(100% - 60px);
+                    position: absolute;
+                }
+            }
+
+            #lento {
+                animation: corre 10s normal forwards;
+            }
+
+            #veloz {
+                animation: corre 5s normal forwards;
+            }
+
+            aside {
+                background: linear-gradient(#fff, #e7e8e9);
+            }
+
+            span[data-bs-toggle="popover"] {
+                cursor: pointer;
+            }
+        </style>
+
+        <!--ESTO SERVIRÁ PARA COMPARAR UN ANTES Y UN DESPUÉS-->
+        <link href="https://unpkg.com/image-compare-viewer/dist/image-compare-viewer.min.css" rel="stylesheet" />
+
+        <title>Tigre de bengala - Ana Carolina Soliz - Sebastian Leal</title>
+    </head>
 
     <body>
         <!--ESTE ES EL ENCABEZADO-->
-        <header >
+        <header>
             <div class="container">
                 <div class="row">
-                 <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto"> 
-                    
-                   <h2 class="text-center mt-5 fst-italic" ><span class="px-2 py-1">Panthera tigris tigris</span></h2>
-                    
-                    <h1 class="text-center py-3">Tigre de Bengala</h1>
+                    <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
+                        <h2 class="text-center mt-5 fst-italic"><span class="px-2 py-1">Panthera tigris tigris</span></h2>
 
-                    <!--desde acá la edición de nombres-->
+                        <h1 class="text-center py-3">Tigre de Bengala</h1>
 
-                    <h6 class="text-center mb-5 text-muted">
-                        Por
+                        <!--desde acá la edición de nombres-->
 
-                        <span
-                            data-bs-container="body"
-                            data-bs-toggle="popover"
-                            data-bs-trigger="hover focus"
-                            data-bs-placement="top"
-                            data-bs-content="<div class='text-center'><img src='files/hombre.png' class='w-50 mb-2 rounded-circle'><br>Sebastian Leal<br><span class='small text-muted'>Diseñador</span></div>"
-                        >
-                            Sebastian Leal
-                        </span>
+                        <h6 class="text-center mb-5 text-muted">
+                            Por
 
-                        y
+                            <span
+                                data-bs-container="body"
+                                data-bs-toggle="popover"
+                                data-bs-trigger="hover focus"
+                                data-bs-placement="top"
+                                data-bs-content="<div class='text-center'><img src='files/hombre.png' class='w-50 mb-2 rounded-circle'><br>Sebastian Leal<br><span class='small text-muted'>Diseñador</span></div>"
+                            >
+                                Sebastian Leal
+                            </span>
 
-                        <span
-                            data-bs-container="body"
-                            data-bs-toggle="popover"
-                            data-bs-trigger="hover focus"
-                            data-bs-placement="top"
-                            data-bs-content="<div class='text-center'><img src='files/mujer.png' class='w-50 mb-2 rounded-circle'><br>Ana Carolina Soliz<br><span class='small text-muted'>Diseñadora</span></div>"
-                        >
-                            Ana Carolina Soliz
-                        </span>
-                    </h6>
+                            y
 
-                    <!--hasta aquí la edición de nombres-->
+                            <span
+                                data-bs-container="body"
+                                data-bs-toggle="popover"
+                                data-bs-trigger="hover focus"
+                                data-bs-placement="top"
+                                data-bs-content="<div class='text-center'><img src='files/mujer.png' class='w-50 mb-2 rounded-circle'><br>Ana Carolina Soliz<br><span class='small text-muted'>Diseñadora</span></div>"
+                            >
+                                Ana Carolina Soliz
+                            </span>
+                        </h6>
 
-                    
-                    <p class="lead" >Es una de las seis subespecies de tigres que existen en el mundo, es el único felino de piel rayada y sus grandes dimensiones, fuerza y potencia lo convierten en el mayor de los félidos (carnívoros que se alimentan, casi exclusivamente, de los animales que matan). Es nativo de India y Bangladesh, se encuentran en distintos tipos de habitad incluyendo sabanas, bosque tropicales y subtropicales. Viven en solitario y marcan agresivamente con su olor grandes territorios para mantener alejados a los rivales. Son poderosos cazadores nocturnos, capaces de recorrer muchos kilómetros para encontrar búfalos, ciervos, jabalíes u otros grandes mamíferos. Los tigres usan su característico pelaje para camuflarse. Acechan pacientemente y se acercan a sus víctimas con gran sigilo lo suficiente para atacarlas con un salto rápido y letal.</p>
-                    
-                    <p class="text-center">Actualmente se encuentra En Peligro según la Lista Roja de la UICN. </p>
+                        <!--hasta aquí la edición de nombres-->
 
-                    <div class="text-center py-3 px-3 px-sm-2 px-md-1 px-lg-0">
-                        <!--Este elemento es afectado con JavaScript-->
-                        <object data="files/conservacion_lc.svg" type="image/svg+xml" id="conservacion"></object>
-                        <!--Vean más abajo, las líneas 249 a 266-->
-                    </div>
-                    <p class="lead text-center">Otros nombres utilizados: Tigre de Bengala Real, Tigre Indio
-                    </p>
-                </div>
-                <div class="col-xl-11 col-xxl-10 mx-auto">
-                    
-                    <!--Muestra el tigre chico o el grando, pero carga ambos-->
-                    <object data="files/tigre-chico.svg" type="image/svg+xml" class="d-md-none"></object>
-                    <object data="files/tigre-grande.svg" type="image/svg+xml" class="d-none d-md-block"></object>
-                    <!--Se muestra o no por una clase de Bootstrap que responde al ancho de pantalla-->
+                        <p class="lead">El tigre es el único del género Panthera con camuflaje rayado. Sus dimensiones y fuerza lo convierten en el mayor de los grandes félidos.</p>
+                        <p>
+                            Nativo del subcontinente indio, el tigre de bengala vive en solitario y es capaz de recorrer muchos kilómetros, entre sabanas y bosques tropicales y subtropicales, para dar caza a búfalos, ciervos y otros grandes
+                            mamíferos, a quienes se acerca tanto como permita el sigilo y su camuflaje, para atrapar de un salto rápido y letal.
+                        </p>
 
-                    <!--Acá se cargan dos audios, pero sonará uno-->
-                    <div class="mx-auto px-3 py-2 rounded-pill shadow-sm" style="width:220px; background:#dd7324; color: #ffffff">
-                        <audio id="elAudio">
-                            <source src="files/sonido tigre.mp3" type="audio/mpeg">
-                            <source src="files/sonido tigre.ogg" type="audio/ogg">
-                        </audio>
-                        <div class="form-check form-switch text-center">
-                            <input class="form-check-input" type="checkbox" id="elSwitch">
-                            <label class="form-check-label" for="elSwitch">Escucha al Tigre</label>
+                        <div class="text-center py-3 px-3 px-sm-2 px-md-1 px-lg-0">
+                            <!--Este elemento es afectado con JavaScript-->
+                            <object data="files/conservacion_lc.svg" type="image/svg+xml" id="conservacion"></object>
+                            <!--Vean más abajo, las líneas 249 a 266-->
                         </div>
                     </div>
-                    <!--Suena con JavaScript, ver líneas 267 a 278--> 
+                    <div class="col-xl-11 col-xxl-10 mx-auto">
+                        <!--Muestra el tigre chico o el grando, pero carga ambos-->
+                        <object data="files/tigre-chico.svg" type="image/svg+xml" class="d-md-none"></object>
+                        <object data="files/tigre-grande.svg" type="image/svg+xml" class="d-none d-md-block"></object>
+                        <!--Se muestra o no por una clase de Bootstrap que responde al ancho de pantalla-->
+
+                        <!--Acá se cargan dos audios, pero sonará uno-->
+                        <div class="mx-auto px-3 py-2 rounded-pill shadow-sm" style="width: 220px; background: #dd7324; color: #ffffff;">
+                            <audio id="elAudio">
+                                <source src="files/sonido tigre.mp3" type="audio/mpeg" />
+                                <source src="files/sonido tigre.ogg" type="audio/ogg" />
+                            </audio>
+                            <div class="form-check form-switch text-center">
+                                <input class="form-check-input" type="checkbox" id="elSwitch" />
+                                <label class="form-check-label" for="elSwitch">Escucha al Tigre</label>
+                            </div>
+                        </div>
+                        <!--Suena con JavaScript, ver líneas 267 a 278-->
+                    </div>
                 </div>
             </div>
         </header>
+
         <!--ESTE ES EL CONTENIDO PRINCIPAL-->
         <main>
-           <section class="container-fluid g-0">
-                <div class="row g-0">
-                    <div class="col-12 py-3">
-                        <h3 class="text-center pt-5 pb-2">Presencia</h3>
-           <section class="container">
+            <section class="container">
                 <div class="row">
                     <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto mt-3 mb-5">
-                        <p>Se reconocen seis subespecies de Panthera tigris, que aún existen en vida silvestre.
-                        La subespecie P. tigris tigris es nativa de India y Bangladesh, pero tiene su rango de distribución a lo largo de todo el subcontinente indio, aunque la fragmentación de su hábitat ha generado que sea una distribución parchosa y que actualmente estén presentes casi exclusivamente en reservas naturales y parques nacionales. También se encuentran en Nepal, Bután y China.
+                        <h3 class="text-center pt-5 pb-2">Presencia</h3>
+                        <p>
+                            Se reconocen seis subespecies de Panthera tigris, que aún existen en vida silvestre. La subespecie <i>Panthera tigris tigris</i> es nativa de India y Bangladesh, pero tiene su rango de distribución a lo largo de
+                            todo el subcontinente indio, aunque la fragmentación de su hábitat ha generado que sea una distribución parchosa y que actualmente estén presentes casi exclusivamente en reservas naturales y parques nacionales.
+                            También se encuentran en Nepal, Bután y China.
                         </p>
                     </div>
-                </div>
-           </section>
-                <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
-                        <h4 class="text-center pt-5 pb-2">Distribución de las subespecies</h4>
-                        <object data="files/mapa-t1.svg" type="image/svg+xml" class="my-3"></object>
-                        <p class="text-center">Se reconocen seis subespecies de Panthera tigris, que aún existen en vida silvestre.</p>
-                </div>
-
-                <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
-                        <h4 class="text-center pt-5 pb-2">Ubicación</h4>
-                        <object data="files/mapa-t0.svg" type="image/svg+xml" class="my-3"></object>
-                        <p class="text-center">Nativos de India y Bangladesh, pero tiene su rango de distribución a lo largo de todo el subcontinente indio.</p>
-                </div>
-                <div class="row g-0">
+                    <div class="col-lg-11 col-xl-10 col-xxl-9 mx-auto">
+                        <h4 class="text-center pt-5">Distribución de las subespecies</h4>
+                        <object data="files/mapa-t1.svg" type="image/svg+xml" class="my-2"></object>
+                    </div>
                     <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
-                        <h4 class="text-center pt-5 pb-2">Hábitad</h4>
-                        <!--VAMOS A INCLUIR cuatro imagenes EN UN CARRUSEL tigre-->
-                        <div id="carruselHabitad" class="carousel carousel-dark slide carousel-fade" data-bs-ride="carousel">
+                        <p class="text-center">Se reconocen seis subespecies de Panthera tigris, que aún existen en vida silvestre.</p>
+                    </div>
+                    <div class="col-lg-11 col-xl-10 col-xxl-9 mx-auto">
+                        <h4 class="text-center pt-5">Ubicación</h4>
+                        <object data="files/mapa-t0.svg" type="image/svg+xml" class="my-2"></object>
+                    </div>
+                    <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
+                        <p class="text-center">Nativos de India y Bangladesh, distribuidos a lo largo de todo el subcontinente indio.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="container">
+                <div class="row">
+                    <div class="col-lg-11 col-xl-10 col-xxl-9 mx-auto">
+                        <h4 class="text-center pt-5">Hábitat</h4>
+                        <div id="carruselHabitad" class="carousel slide carousel-fade my-3" data-bs-ride="carousel">
                             <div class="carousel-indicators">
                                 <button type="button" data-bs-target="#carruselHabitad" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                                 <button type="button" data-bs-target="#carruselHabitad" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -246,59 +247,44 @@
                             </div>
                             <div class="carousel-inner">
                                 <div class="carousel-item active" data-bs-interval="2000">
-                                    <img src="files/B1.jpg" style="overflow:visible;" width="2000" height="600" transform="matrix(0.5 0 0 0.5 0 0)" class="d-block w-100 img-fluid">
+                                    <img src="files/B1.jpg" class="d-block w-100" />
                                     <div class="carousel-caption">
-                                        <h5>Boques Tropical Seco</h5>
+                                        <p class="text-white">Boques Tropical Seco</p>
                                     </div>
                                 </div>
                                 <div class="carousel-item" data-bs-interval="2000">
-                                    <img src="files/B2.jpg" style="overflow:visible;" width="2000" height="600" transform="matrix(0.5 0 0 0.5 0 0)" class="d-block w-100 img-fluid">            
+                                    <img src="files/B2.jpg" class="d-block w-100" />
                                     <div class="carousel-caption">
-                                        <h5>Bosque Caducifoli</h5>
+                                        <p class="text-white">Bosque Caducifoli</p>
                                     </div>
                                 </div>
                                 <div class="carousel-item" data-bs-interval="2000">
-                                   <img src="files/B3.jpg" style="overflow:visible;" width="2000" height="600" transform="matrix(0.5 0 0 0.5 0 0)" class="d-block w-100 img-fluid">
+                                    <img src="files/B3.jpg" class="d-block w-100 img-fluid" />
                                     <div class="carousel-caption">
-                                        <h5>Bosque Tropical Humedo</h5>
+                                        <p class="text-white">Bosque Tropical Humedo</p>
                                     </div>
                                 </div>
                                 <div class="carousel-item" data-bs-interval="2000">
-                                    <img src="files/B4.jpg" style="overflow:visible;" width="2000" height="600" transform="matrix(0.5 0 0 0.5 0 0)" class="d-block w-100 img-fluid">
+                                    <img src="files/B4.jpg" class="d-block w-100 img-fluid" />
                                     <div class="carousel-caption">
-                                        <h5>Manglar</h5>
+                                        <p class="text-white">Manglar</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 py-3 mx-auto">
+                        <p class="text-center">Por su distribución, se les puede encontrar en má de algún hábitat.</p>
+                    </div>
                 </div>
             </section>
-<!-- -------------------------------------------------------------------------------- -->
-<!-- -----------------------------Caracteristicas----------------------------- -->
-<!-- -------------------------------------------------------------------------------- -->
+
             <section class="container">
                 <div class="row">
                     <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
                         <h3 class="text-center pt-5 pb-2">Características</h3>
                     </div>
-                    <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
-                        <h4 class="text-center pt-5 pb-2">Tamaños <img src="files/tap.png" class="img-fluid d-lg-none d-xl-block d-xl-none d-xxl-block d-xxl-none d-lg-none" style="width: 20px" /></h4>
 
-                        <object data="files/grafico-tamanos-t.svg" type="image/svg+xml" class="my-3"></object>
-                        <p>Son los miembros más grandes de la familia de los felinos.</p>
-                    </div class="row">
-                    <div></div>
-                    <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
-                        <h4 class="text-center pt-5 pb-2">Yuxtaposición de imágenes</h4>
-                        <div id="image-compare" class="my-3">
-                            <img src="files/tigrecraneo.png" alt="Craneo" />
-                            <img src="files/tigrecabeza.png" alt="Cabeza" />
-                        </div>
-                    </div>
-                        <p>Hay distintas formas de resolver, con JavaScript, una <a href="https://bashooka.com/coding/image-comparison-slider-javascript-libraries/" target="_blank">yuxtaposición imágenes</a>. En este caso ocupamos <a href="https://image-compare-viewer.netlify.app/" target="_blank">Imagen Comparte Viewer</a>, que ofrece su código de programación como una biblioteca de JavaScript complementada con un código de descripción de estilo (CSS). </p>
-                    </div>
-                </div>
                     <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
                         <div class="row align-items-center py-4">
                             <div class="col-sm-6 text-center text-sm-start order-sm-2">
@@ -338,128 +324,122 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto text-center">
-                        <h4 class="text-center pt-5 pb-2">Colmillo</h4>
-                        <object data="files/colmillo.svg" type="image/svg+xml" class="my-3 " style="width: 50%"></object>
-                        <p>Son los miembros más grandes de la familia de los felinos.</p>
-                    </div>
 
-<!-- -------------------------------------------------------------------------------- -->
-<!-- -----------------------------Alimentacion----------------------------- -->
-<!-- -------------------------------------------------------------------------------- -->
                     <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
-                        <h4 class="text-center pt-5 pb-2">Alimentación</h4>
-                        <object data="files/alimentacion.svg" type="image/svg+xml" ></object>
-                        <p>Son carnívoros y su dieta incluye diversos mamíferos, aves, peces, roedores y anfibios.</p>
-                    </div> 
-<!-- -------------------------------------------------------------------------------- -->
-<!-- -----------------------------Mutacion----------------------------- -->
-          
-                    <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
-                     <h4 class="text-center pt-5 pb-2">Variación genética</h4>
-                     <p>Existe una mutación genética que produce que la piel naranja del tigre se sustituya por otro color.</p>
-                    </div> 
-                    <div class="row">
-                    <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 mx-auto text-center">
-                        <div >
-                           
-                           <div >
-                              <h2 id="message2">
-                               
-                              </h2>
-                              <img class="col-8" style="width: 90%;" id="myImage"
-                                    src="./files/tigre-blanco.jpg"  ><br><br>
-                           </div>
-                         
+                        <h4 class="text-center pt-5 pb-2">Tamaños</h4>
+                        <object data="files/grafico-tamanos-t.svg" type="image/svg+xml" class="my-3"></object>
+                        <p class="text-center">Son los miembros más grandes de la familia de los felinos.</p>
+                        <h4 class="text-center pt-5 pb-2">Colmillos</h4>
+                        <div id="image-compare" class="my-3">
+                            <img src="files/tigrecraneo.png" alt="Craneo" />
+                            <img src="files/tigrecabeza.png" alt="Cabeza" />
                         </div>
+                        <div class="text-center">
+                            <object data="files/colmillo.svg" type="image/svg+xml" class="my-3 w-50 mx-auto"></object>
+                        </div>
+                        <h4 class="text-center pt-5 pb-2">Garras</h4>
+                        <object class="mx-5" data="files/garra.svg" type="image/svg+xml"></object>
+                        <p class="text-center mx-5 mb-5 small text-muted">¿Cómo funcionas sus garras? En ataque el tendón pulsa el dedo de la pata hacia adelante y en reposo los ligamentos mantienen el hueso de la pata hacia atrás.</p>
+                        <h4 class="text-center pt-5 pb-2">Salto del tigre</h4>
+                        <img src="files/gif-salto.gif" class="w-100" />
                     </div>
+                </div>
+            </section>
 
-                    <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 mx-auto">
-                        <br>
-                    <p id="message">
-                        Tigre Blanco
-                    </p >
-                    <p id="parrafoTigre">
-                        Su color blanco roto o crema obedece a una mutación recesiva, es decir, a una mala transcripción del código genético en el gen responsable del color (cuando madre y padre son portadores de dicho gen). Tienen pupilas de color rosa e iris azul, generalmente. Las franjas son de tonalidades que van del gris tostado al negro.
-                    </p>
+            <section class="container">
+                <div class="row">
+                    <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
+                        <h3 class="text-center pt-5 pb-2">Alimentación</h3>
+                        <object data="files/alimentacion.svg" type="image/svg+xml"></object>
+                        <p>Premunidos de su camiflaje, fuerza, colmillos y garras, con un salto de 9 metros puede capturar a los grandes mamíferos, aves, peces, roedores y anfibios que se incluyen en su dieta carnívora.</p>
                     </div>
+                </div>
+            </section>
+
+            <section class="container">
+                <div class="row">
+                    <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
+                        <h3 class="text-center pt-5 pb-2">Variación genética</h3>
+                        <p>Existe una mutación genética que produce que la piel naranja del tigre se sustituya por otro color.</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 mx-auto text-center">
+                            <div>
+                                <div>
+                                    <h2 id="message2"></h2>
+                                    <img class="col-8" style="width: 90%;" id="myImage" src="./files/tigre-blanco.jpg" /><br />
+                                    <br />
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 col-xxl-6 mx-auto">
+                            <br />
+                            <p id="message">
+                                Tigre Blanco
+                            </p>
+                            <p id="parrafoTigre">
+                                Su color blanco roto o crema obedece a una mutación recesiva, es decir, a una mala transcripción del código genético en el gen responsable del color (cuando madre y padre son portadores de dicho gen). Tienen
+                                pupilas de color rosa e iris azul, generalmente. Las franjas son de tonalidades que van del gris tostado al negro.
+                            </p>
+                        </div>
                     </div>
 
                     <div class="button text-center">
-                        <button class="btn" style="background:#dd7324; color: #ffffff"
-                                onclick=before();>
+                        <button class="btn" style="background: #dd7324; color: #ffffff;" onclick="before();">
                             Tigre Dorado
                         </button>
-                        <button  class="btn" style="background:#dd7324; color: #ffffff"
-                                 onclick=afterr();>
+                        <button class="btn" style="background: #dd7324; color: #ffffff;" onclick="afterr();">
                             Tigre Blanco
                         </button>
                     </div>
-                    <br><br>
-<!-- -------------------------------------------------------------------------------- --> 
-<!-- -----------------------------COMPORTAMIENTO---------------------------- -->
-<!-- -------------------------------------------------------------------------------- -->
-        <section class="container">
-            <div class="row">
-                <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
-                    <h3 class="text-center pt-5 pb-2">Comportamiento</h3>
                 </div>
-                <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
-                     <h4 class="text-center pt-5 pb-2">Salto del tigre</h4>
-                         <p>Recuerden que podemos animar SVG con CSS, como en el siguiente caso; donde tenemos un par de <a href="https://www.w3schools.com/css/css3_animations.asp" target="_blank">animaciones</a>, cada una con su <a href="https://www.w3schools.com/css/css3_2dtransforms.asp" target="_blank">transformación en 2D</a>:
-                         </p>
-                <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto row g-0">
-                    <img src = "files/gif-salto.gif" id="salto" />
-                </div>
-                    <h4 class="text-center pt-5 pb-2">Animación</h4>
-                        <p>Recuerden que podemos animar SVG con CSS, como en el siguiente caso; donde tenemos un par de <a href="https://www.w3schools.com/css/css3_animations.asp" target="_blank">animaciones</a>, cada una con su <a href="https://www.w3schools.com/css/css3_2dtransforms.asp" target="_blank">transformación en 2D</a>:
-                        </p>
-                        <object class="mx-5" data="files/garra.svg" type="image/svg+xml"></object>
-                        <p class="text-center mx-5 mb-5 small text-muted">¿Cómo funcionas sus garras? En ataque el tendón pulsa el dedo de la pata hacia adelante y en reposo los ligamentos mantienen el hueso de la pata hacia atrás.</p>
-                          
-                </div>
-            </div>
-        </section>    
-        <section class="container">
-            <div class="row">
+            </section>
 
-                <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
-                    <h3 class="text-center pt-5 pb-2">Amenazas</h3>
-                </div>
+            <!-- -------------------------------------------------------------------------------- -->
+            <!-- -----------------------------COMPORTAMIENTO---------------------------- -->
+            <!-- -------------------------------------------------------------------------------- -->
+
+            <section class="container">
                 <div class="row">
-                    <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto mt-3 mb-5">
-                        <p>Su principal amenaza es la fragmentación y pérdida de su hábitat natural, debido a múltiples presiones humanas como la construcción de caminos y la expansión de la urbe.
-                        </p>
+                    <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
+                        <h3 class="text-center pt-5 pb-2">Amenazas</h3>
                     </div>
-                </div>
-                <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
-                        <h4 class="text-center pt-5 pb-2">Causas de la caza de tigres</h4>
-                        <object data="files/amenazas.svg" type="image/svg+xml" class="my-3"></object>
-                </div>
-                <div class="container row">
-                <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
-                        <h4 class="text-center pt-5 pb-2">Disminución de población<br><br></h4>
-                </div>
-                <div class="row">
-                <div class="row col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
-                    <div class="col">
-                        <div >
-                           <div >
-                              <p >En los últimos 100 años la población ha disminuido a causa de cazadores al sur de Asia.</p> 
-                           </div>
+                    <div class="row">
+                        <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto mt-3 mb-5">
+                            <p>Su principal amenaza es la fragmentación y pérdida de su hábitat natural, debido a múltiples presiones humanas como la construcción de caminos y la expansión de la urbe.</p>
                         </div>
                     </div>
-                    <div class= "col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
-                        <object data="files/grafico.svg" type="image/svg+xml" class="w-80  my-3 "></object> 
+                    <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
+                        <h4 class="text-center pt-5 pb-2">Causas de la caza de tigres</h4>
+                        <object data="files/amenazas.svg" type="image/svg+xml" class="my-3"></object>
+                    </div>
+                    <div class="container row">
+                        <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
+                            <h4 class="text-center pt-5 pb-2">
+                                Disminución de población<br />
+                                <br />
+                            </h4>
+                        </div>
+                        <div class="row">
+                            <div class="row col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
+                                <div class="col">
+                                    <div>
+                                        <div>
+                                            <p>En los últimos 100 años la población ha disminuido a causa de cazadores al sur de Asia.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
+                                    <object data="files/grafico.svg" type="image/svg+xml" class="w-80 my-3"></object>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                </div>
-                </div>
-            </div>
-       </section>
-       </section>
+            </section>
         </main>
-                <aside>
+        <aside>
             <div class="container small text-center">
                 <div class="row py-5">
                     <div class="col-sm-11 col-md-10 col-lg-9 col-xl-8 col-xxl-7 mx-auto">
@@ -496,24 +476,70 @@
                     </div>
                     <div class="row g-4" id="colegas"></div>
                     <script>
-                       const colegas = document.getElementById("colegas");
-                       const datos = [
-                          { especie: "Gibón de manos blancas", imagen: "https://raw.githubusercontent.com/profesorfaco/infografia/main/thumbnails/gibon.jpg", descripcion: "el danzarín del bosque.", url: "https://gibon-de-manos-blancas.github.io/avance/" },
-                          { especie: "Grulla de cuello blanco", imagen: "https://raw.githubusercontent.com/profesorfaco/infografia/main/thumbnails/grulla.jpg", descripcion: "un viajera romántica.", url: "https://grulla-de-cuello-blanco.github.io/avance" },
-                          { especie: "Hipopótamo pigmeo", imagen: "https://raw.githubusercontent.com/profesorfaco/infografia/main/thumbnails/hipopotamo.jpg", descripcion: "un pequeño caballo de río.", url: "https://hipopotamo-pigmeo.github.io/avance" },
-                          { especie: "Panda rojo", imagen: "https://raw.githubusercontent.com/profesorfaco/infografia/main/thumbnails/panda.jpg", descripcion: "el animal más lindo del mundo.", url: "https://infografia-panda-rojo.github.io/avance" },
-                          { especie: "Lemur de cola anillada", imagen: "https://raw.githubusercontent.com/profesorfaco/infografia/main/thumbnails/lemur.jpg", descripcion: "el zorrillo de Madagascar.", url: "https://lemur-cola-anillada.github.io/avance" },
-                          { especie: "Orangután de borneo", imagen: "https://raw.githubusercontent.com/profesorfaco/infografia/main/thumbnails/orangutan.jpg", descripcion: "el hombre del bosque.", url: "https://orangutan-borneo-uc.github.io/avance" },
-                          { especie: "Oso malayo", imagen: "https://raw.githubusercontent.com/profesorfaco/infografia/main/thumbnails/oso.jpg", descripcion: "el oso más pequeño.", url: "https://oso-malayo.github.io/avance" },
-                          { especie: "Siamang", imagen: "https://raw.githubusercontent.com/profesorfaco/infografia/main/thumbnails/siamang.jpg", descripcion: "el acróbata de la selva.", url: "https://siamang-infografia.github.io/avance" },
-                          { especie: "Tapir amazónico", imagen: "https://raw.githubusercontent.com/profesorfaco/infografia/main/thumbnails/tapir.jpg", descripcion: "el jardinero de la selva.", url: "https://tapir-amazonico.github.io/avance" },
-                          { especie: "Tigre de bengala", imagen: "https://raw.githubusercontent.com/profesorfaco/infografia/main/thumbnails/tigre.jpg", descripcion: "el felino más grande del mundo.", url: "https://tigre-de-bengala.github.io/avance/" }
-                       ];
-                       datos.forEach((d) => {
-                            if(d.especie != "Tigre de bengala"){
+                        const colegas = document.getElementById("colegas");
+                        const datos = [
+                            {
+                                especie: "Gibón de manos blancas",
+                                imagen: "https://raw.githubusercontent.com/profesorfaco/infografia/main/thumbnails/gibon.jpg",
+                                descripcion: "el danzarín del bosque.",
+                                url: "https://gibon-de-manos-blancas.github.io/avance/",
+                            },
+                            {
+                                especie: "Grulla de cuello blanco",
+                                imagen: "https://raw.githubusercontent.com/profesorfaco/infografia/main/thumbnails/grulla.jpg",
+                                descripcion: "un viajera romántica.",
+                                url: "https://grulla-de-cuello-blanco.github.io/avance",
+                            },
+                            {
+                                especie: "Hipopótamo pigmeo",
+                                imagen: "https://raw.githubusercontent.com/profesorfaco/infografia/main/thumbnails/hipopotamo.jpg",
+                                descripcion: "un pequeño caballo de río.",
+                                url: "https://hipopotamo-pigmeo.github.io/avance",
+                            },
+                            {
+                                especie: "Panda rojo",
+                                imagen: "https://raw.githubusercontent.com/profesorfaco/infografia/main/thumbnails/panda.jpg",
+                                descripcion: "el animal más lindo del mundo.",
+                                url: "https://infografia-panda-rojo.github.io/avance",
+                            },
+                            {
+                                especie: "Lemur de cola anillada",
+                                imagen: "https://raw.githubusercontent.com/profesorfaco/infografia/main/thumbnails/lemur.jpg",
+                                descripcion: "el zorrillo de Madagascar.",
+                                url: "https://lemur-cola-anillada.github.io/avance",
+                            },
+                            {
+                                especie: "Orangután de borneo",
+                                imagen: "https://raw.githubusercontent.com/profesorfaco/infografia/main/thumbnails/orangutan.jpg",
+                                descripcion: "el hombre del bosque.",
+                                url: "https://orangutan-borneo-uc.github.io/avance",
+                            },
+                            { especie: "Oso malayo", imagen: "https://raw.githubusercontent.com/profesorfaco/infografia/main/thumbnails/oso.jpg", descripcion: "el oso más pequeño.", url: "https://oso-malayo.github.io/avance" },
+                            {
+                                especie: "Siamang",
+                                imagen: "https://raw.githubusercontent.com/profesorfaco/infografia/main/thumbnails/siamang.jpg",
+                                descripcion: "el acróbata de la selva.",
+                                url: "https://siamang-infografia.github.io/avance",
+                            },
+                            {
+                                especie: "Tapir amazónico",
+                                imagen: "https://raw.githubusercontent.com/profesorfaco/infografia/main/thumbnails/tapir.jpg",
+                                descripcion: "el jardinero de la selva.",
+                                url: "https://tapir-amazonico.github.io/avance",
+                            },
+                            {
+                                especie: "Tigre de bengala",
+                                imagen: "https://raw.githubusercontent.com/profesorfaco/infografia/main/thumbnails/tigre.jpg",
+                                descripcion: "el felino más grande del mundo.",
+                                url: "https://tigre-de-bengala.github.io/avance/",
+                            },
+                        ];
+                        datos.forEach((d) => {
+                            if (d.especie != "Tigre de bengala") {
                                 colegas.innerHTML +=
                                     '<div class="col-12 col-md-6 col-lg-4"><div class="row shadow-sm g-0 small align-items-center bg-white"><div class="col-3"><img loading="lazy" src="' +
-                                    d.imagen + '" alt="' +
+                                    d.imagen +
+                                    '" alt="' +
                                     d.especie +
                                     '" class="w-100"></div><div class="col-9 p-2"><em>' +
                                     d.especie +
@@ -524,7 +550,7 @@
                                     "</a></div></div></div>";
                             }
                         });
-               </script>
+                    </script>
                 </div>
             </div>
         </aside>
@@ -538,7 +564,7 @@
                 </div>
             </div>
         </footer>
-        <!--EN EL SCRIPT QUE SIGUE AJUSTA EL SVG DEL ESTADO DE CONSERVACIÓN AL ANCHO DE LA VENTANA-->        
+        <!--EN EL SCRIPT QUE SIGUE AJUSTA EL SVG DEL ESTADO DE CONSERVACIÓN AL ANCHO DE LA VENTANA-->
         <script>
             window.addEventListener("DOMContentLoaded", elAjuste);
             window.addEventListener("resize", elAjuste);
@@ -559,9 +585,9 @@
 
         <!--CON EL SIGUIENTE SCRIPT HAGO CANTAR AL TIGRE-->
         <script>
-            var canto = document.getElementById("elAudio"); 
+            var canto = document.getElementById("elAudio");
             var boton = document.getElementById("elSwitch");
-            boton.addEventListener('change', function() {
+            boton.addEventListener("change", function () {
                 if (this.checked) {
                     canto.play();
                 } else {
@@ -570,8 +596,7 @@
             });
         </script>
 
-
- <!--CON EL SIGUIENTE SCRIPT CAMBIO LOS OJOS DE NOCHE A DÍA-->
+        <!--CON EL SIGUIENTE SCRIPT CAMBIO LOS OJOS DE NOCHE A DÍA-->
         <script>
             function getValue(radio) {
                 if (radio.value == "nocturno") {
@@ -583,28 +608,24 @@
                 }
             }
         </script>
- <!--CON EL SIGUIENTE SCRIPT CAMBIO LOS TIGRES-->
-<script>
-    function before(){
-        document.getElementById('myImage')
-        .src="./files/tigre-dorado.jpg";
-        document.getElementById('message')
-        .innerHTML="Tigre Dorado";
-        document.getElementById('parrafoTigre')
-        .innerHTML="En ocasiones se le llama tigre de fresa, debido a su coloración amarilla-rojiza. El gen causante de este inusual color es el relacionado con las bandas de la piel. Su rayado es mucho más pálido de lo usual, y en ocasiones las rayas pueden devenir en puntos o parches alargados. Estos tigres suelen ser más grandes, pesados y, a consecuencia del efecto del gen recesivo sobre el pelo, su piel suele ser más suave que la de sus parientes anaranjados.";
-    }
-    
-    function afterr(){
-        document.getElementById('myImage')
-        .src="./files/tigre-blanco.jpg";
-        document.getElementById('message')
-        .innerHTML="Tigre Blanco";
-        document.getElementById('parrafoTigre')
-        .innerHTML="Su color blanco roto o crema obedece a una mutación recesiva, es decir, a una mala transcripción del código genético en el gen responsable del color (cuando madre y padre son portadores de dicho gen). Tienen pupilas de color rosa e iris azul, generalmente. Las franjas son de tonalidades que van del gris tostado al negro.";
-    }
-</script>
+        <!--CON EL SIGUIENTE SCRIPT CAMBIO LOS TIGRES-->
+        <script>
+            function before() {
+                document.getElementById("myImage").src = "./files/tigre-dorado.jpg";
+                document.getElementById("message").innerHTML = "Tigre Dorado";
+                document.getElementById("parrafoTigre").innerHTML =
+                    "En ocasiones se le llama tigre de fresa, debido a su coloración amarilla-rojiza. El gen causante de este inusual color es el relacionado con las bandas de la piel. Su rayado es mucho más pálido de lo usual, y en ocasiones las rayas pueden devenir en puntos o parches alargados. Estos tigres suelen ser más grandes, pesados y, a consecuencia del efecto del gen recesivo sobre el pelo, su piel suele ser más suave que la de sus parientes anaranjados.";
+            }
 
-        <!--BOOTSTRAP, ADEMÁS DE UN CSS, OFRECE SU PROPIA BIBLIOTECA DE JAVASCRIPT-->        
+            function afterr() {
+                document.getElementById("myImage").src = "./files/tigre-blanco.jpg";
+                document.getElementById("message").innerHTML = "Tigre Blanco";
+                document.getElementById("parrafoTigre").innerHTML =
+                    "Su color blanco roto o crema obedece a una mutación recesiva, es decir, a una mala transcripción del código genético en el gen responsable del color (cuando madre y padre son portadores de dicho gen). Tienen pupilas de color rosa e iris azul, generalmente. Las franjas son de tonalidades que van del gris tostado al negro.";
+            }
+        </script>
+
+        <!--BOOTSTRAP, ADEMÁS DE UN CSS, OFRECE SU PROPIA BIBLIOTECA DE JAVASCRIPT-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
         <!--LO QUE SIGUE ES OTRA BIBLIOTECA DE JAVASCRIPT-->
         <script src="https://unpkg.com/image-compare-viewer/dist/image-compare-viewer.min.js"></script>
@@ -619,38 +640,29 @@
         <script>
             const element = document.querySelector("#image-compare");
             const options = {
-                  controlColor: "#FFFFFF",
-                  controlShadow: true,
-                  addCircle: true,
-                  addCircleBlur: true,
-                  showLabels: true,
-                  labelOptions: {
-                    before: 'Cráneo',
-                    after: 'Cabeza',
-                    onHover: false
-                }
+                controlColor: "#FFFFFF",
+                controlShadow: true,
+                addCircle: true,
+                addCircleBlur: true,
+                showLabels: true,
+                labelOptions: {
+                    before: "Cráneo",
+                    after: "Cabeza",
+                    onHover: false,
+                },
             };
             const viewer = new ImageCompare(element, options).mount();
         </script>
-        <!--PARA QUE HOMERO CORRA UNA VEZ LLEGUEMOS AL FINAL-->
-         <script>
-            var f = document.querySelector("#final").offsetTop;
-            addEventListener("scroll",function () {
-                if (f > window.scrollY) {
-                    document.querySelector("#final").querySelectorAll("img")[0].setAttribute("id", "veloz");
-                    document.querySelector("#final").querySelectorAll("img")[1].setAttribute("id", "lento");
-                }
-            },false);
-        </script>
         <script>
-function preLoad() {
-  a1 = new Image; a1.src = 'files/tigre-blanco.jpg';  
-  a2 = new Image; a2.src = 'files/tigre-dorado.jpg';
- 
-}
-function im(image) {
-  document.getElementById(image[0]).src = eval(image + ".src")
-}
-</script>
+            function preLoad() {
+                a1 = new Image();
+                a1.src = "files/tigre-blanco.jpg";
+                a2 = new Image();
+                a2.src = "files/tigre-dorado.jpg";
+            }
+            function im(image) {
+                document.getElementById(image[0]).src = eval(image + ".src");
+            }
+        </script>
     </body>
 </html>
